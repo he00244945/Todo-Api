@@ -34,9 +34,13 @@ app.get('/todos', function(req, res){
 		res.json(todos);
 	}, function (){
 		res.status(500).send();
+
 	});
 
-});
+	});
+
+
+
 
 // GET /todos/:id
 app.get('/todos/:id', function(req, res){
